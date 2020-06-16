@@ -25,17 +25,6 @@ console.log(grades.sorialgi); */
 
 //객체에는 객체도, 함수도 담을 수 있다
 //로직을 객체에 그룹핑해서 객체 조립을 통한 소프트웨어를 만들 수 있게 함
-/* var grades = {
-    'list' : {'egoing' : 10, 'k8805':6, 'sorialgi':80},
-    'show' : function(){
-        for (const key in this.list) {
-            if (object.hasOwnProperty(key)) {
-                const element = object[key];
-                console.log(element);
-            }
-        }
-    }
-} */
 var grades = {
     'list': { 'egoing': 10, 'k8805': 6, 'sorialgi': 80 },
     'show': function () {
