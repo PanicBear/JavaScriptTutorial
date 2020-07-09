@@ -1,0 +1,33 @@
+<!-- 전역 객체 -->
+<!-- 모든 객체는 이 전역 객체의 프로퍼티이다. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function func(){
+        //     alert('Hello?');
+        // }
+        // func();                 // (window).func() 암시적 선언
+        // window.func();          // window는 전역객체, 모든 함수(메서드)는 전역객체의 프로퍼티라 func() 사용가능
+
+
+        var o = {'func':function(){
+            alert('Hello?');
+        }}
+        o.func();
+        window.o.func();            // 모든 객체 역시 전역 객체의 프로퍼티
+    </script>
+    
+</body>
+</html>
+
+
+<!-- 전역 객체의 API -->
+<!-- 이름은 달라도 API는 공통 -->
+<!-- 웹에서 전역 변수의 이름은 window -->
+<!-- nodejs의 전역 변수의 이름은 global -->
