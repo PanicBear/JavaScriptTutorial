@@ -13,7 +13,7 @@
 
 // 내부함수에서 외부함수의 지역변수에 접근할 수 있다.
 // function outter() {
-//     var title = 'coding everbody';
+//     var title = 'coding everybody';
 //     function inner() {
 //         console.log(title);
 //     }
@@ -22,17 +22,17 @@
 // outter();
 
 
-// 외부함수가 더이상 사용되지 않는 경우에도
-// 내부함수가 외부함수에 접근할 수 있다.
-// function outter(){
+// // 외부함수가 더이상 사용되지 않는 경우에도
+// // 내부함수가 외부함수에 접근할 수 있다.
+// function outter() {
 //     var title = 'coding everybody';
-//     return function(){
+//     return function () {
 //         console.log(title);
 //     }
 // }
 // var inner = outter();   // inner라는 변수에 리턴한 function()을 삽입
 // inner();    // 외부함수의 생명주기가 끝났음에도, 외부함수의 변수 title의 값에 접근 가능.
-//             // 외부함수는 외부함수의 지역변수를 사용하는 내부함수가 소멸될 때까지 소멸되지 않는다는 것을 뜻한다.\
+//             // 외부함수는 외부함수의 지역변수를 사용하는 내부함수가 소멸될 때까지 소멸되지 않는다는 것을 뜻한다.
 
 
 // private variable
@@ -97,7 +97,7 @@
 // 클로저 예제 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures
 // 즉시 호출 함수 : https://sseambong.tistory.com/250
 
-var i = 'a';
-(function(id) {         // 이름 변경
-    console.log(id);
-})(i);  // 입구
+// var i = 'a';
+// (function(id) {         // 이름 변경
+//     console.log(id);
+// })(i);  // 입구
